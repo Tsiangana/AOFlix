@@ -1,0 +1,280 @@
+/* Estilo da página 1 */
+/* Programado por #Eliseu_Zau 03/04/2022 */
+
+/* Classes utilitárias */
+
+/*========================================= inicio ========================================= */
+
+:root{
+	--borda: 1px solid black;
+	--vermelho: rgba(212, 18, 18, 0.856);
+	--sombra: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,'Poppins', sans-serif;
+
+}
+*::selection{
+    background: var(--vermelho);
+    color: var(--white);
+}
+
+.btn{
+	width: 100%;
+	height: 50px;
+	background-color: var(--vermelho);
+	box-shadow: var(--sombra);
+	border: none;
+	border-radius: 30px;
+	transition: .3s linear;
+	color: #fff;
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, .1);
+	box-shadow: 0 .5rem 1rem rgba(209, 38, 38, 0.548);
+}
+
+.btn-primary{
+	width: 140px;
+	height: 40px;
+	background-color: var(--vermelho);
+	border: none;
+	box-shadow: var(--sombra);
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: .3s linear;
+}
+.btn-secundary{
+	width: 140px;
+	height: 40px;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	border: 1.5px solid rgba(212, 18, 18, 0.856);
+	box-shadow: var(--sombra);
+	border-radius: 30px;
+	color: rgba(212, 18, 18, 0.856);
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-left: 15px;
+	transition: .3s linear;
+}
+.btn-primary:hover{
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	border: 1.5px solid rgba(212, 18, 18, 0.856);
+	box-shadow: var(--sombra);
+	border-radius: 30px;
+	color: rgba(212, 18, 18, 0.856);
+}
+.btn-secundary:hover{
+	background-color: var(--vermelho);
+	border: none;
+	box-shadow: var(--sombra);
+	border-radius: 30px;
+	color: #fff;
+}
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url('img/inicio1.jpg');
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(0deg, rgba(192, 27, 27, 0.479),transparent);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	padding-left: 50px;
+}
+
+.content-one{
+	position: absolute;
+	width: 150px;
+	height: 260px;
+	background-color: var(--vermelho);
+	box-shadow: var(--sombra);
+	text-align: center;
+	color: #fff;
+	padding-top: 25px;
+	
+}
+.content .content-one h1{
+	font-size: 40px;
+	font-weight: 800;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-two{
+	position: absolute;
+	width: 260px;
+	height: 200px;
+	/*border: var(--borda);*/
+	top: 320px;	
+}
+.content-two h2{
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 5px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content-two .one{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border: 2px solid #fff;
+}
+.content-two .one h1{
+	position: absolute;
+	font-size: 18px;
+	left: 15px;
+	top: 12px;
+	color: #fff;
+}
+
+.content-two .one .one-one{
+	position: absolute;
+	width: 65px;
+	height: 100%;
+	/*border: 1px solid #fff;*/
+	right: 0px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.content-two .one .one-one .bi{
+	color: rgba(58, 57, 57, 0.39);
+	font-size: 20px;
+}
+
+
+nav{
+	position: absolute;
+	/*border: var(--borda);*/
+	height: 80px;
+	width: 85%;
+	right: 0;
+	padding: 5px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .one{
+	display: flex;
+	color: #fff;
+}
+nav .one .bi{
+	margin-right: 20px;
+	font-size: 30px;
+}
+nav .one h6{
+	font-size: 13px;
+}
+
+footer{
+	position: absolute;
+	width: 400px;
+	height: 230px;
+	/*border: var(--borda);*/
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+}
+
+footer .one{
+	width: 300px;
+	height: 180px;
+	box-shadow: var(--sombra);
+	border-radius: 5px;
+	background: url('img/inicio2.jpg') no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+}
+
+footer .one .bi{
+	font-size: 50px;
+	color: rgba(145, 110, 110, 0.685);
+	cursor: pointer;
+	text-align: center;
+}
+
+.login{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgba(71, 69, 69, 0.342);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.login .bi{
+	position: absolute;
+	top: 35px;
+	right: 8%;
+	font-size: 80px;
+	font-weight: 900;
+	color: #fff;
+	cursor: pointer;
+}
+
+.login .one{
+	width: 420px;
+	height: 380px;
+	background: #fff;
+	border-radius: 30px;
+	border: none;
+	padding: 25px;
+	box-shadow: var(--sombra);
+}
+.login .one form{
+	padding-top: 15px;
+}
+
+.login .one form h3{
+	margin-bottom: 35px;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.login .one form input{
+	width: 100%;
+	height: 50px;
+	border: none;
+	box-shadow: var(--sombra);
+	margin-bottom: 10px;
+	border-radius: 30px;
+	padding-left: 10px;
+}
+
