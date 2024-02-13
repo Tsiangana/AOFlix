@@ -53,7 +53,7 @@ Nós usamos SemVer para controle de versão. Para as versões disponíveis, obse
 
 Você também pode ver a lista de todos os colaboradores que participaram deste projeto. 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes. 🎁 Expressões de gratidão
+Este projeto está sob a licença (MIT Licence) - veja o arquivo LICENSE.md para detalhes. 🎁 Expressões de gratidão
 
 Conte a outras pessoas sobre este projeto 📢;
 Convide alguém da equipe para uma cerveja 🍺;
