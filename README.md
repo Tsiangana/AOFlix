@@ -1,63 +1,97 @@
-Netflix Clone
+# AOFlix 🎬
 
-Recriei o Site da Netflix. 🚀 Começando
+![AOFlix Banner](https://raw.githubusercontent.com/Tsiangana/AOFlix/main/img/banner_placeholder.png)
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+> Uma plataforma de streaming moderna, inspirada na interface do Netflix, desenvolvida com PHP e MySQL.
 
-Consulte Implantação para saber como implantar o projeto. 📋 Pré-requisitos
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PHP Version](https://img.shields.io/badge/php-%5E7.4%20%7C%208.x-blue.svg)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/mysql-%234479A1.svg?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
-Mysql Xampp
+---
 
-Dar exemplos
+## 🌟 Visão Geral
 
-Faça download do xampp no google e istale-o em seguida faça download do Mysql
+O **AOFlix** é um clone funcional do Netflix que oferece uma experiência completa de catálogo de filmes e séries. O projeto foi construído para demonstrar habilidades em desenvolvimento Full Stack, integração de banco de dados e design de interface responsiva.
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+## 🚀 Funcionalidades Principais
 
-Essa etapa será:
+- **🔐 Autenticação de Usuários:** Sistema completo de Login e Cadastro com validação.
+- **🛠️ Painel Administrativo:** Interface dedicada para gerenciar filmes, usuários e categorias.
+- **📁 Categorização Inteligente:** Organização de conteúdo por gênero (Ação, Crime, Drama, etc.).
+- **🔍 Busca Dinâmica:** Filtragem de títulos em tempo real.
+- **🎥 Player de Vídeo Integrado:** Suporte a trailers e vídeos em HTML5 com controles personalizados.
+- **📱 Design Responsivo:** Interface otimizada para diferentes tamanhos de tela.
+- **⭐ Favoritos e Listas:** Opção para adicionar títulos à lista de preferências.
 
-No repositório tem uma pasta de nome bd dentro da pasata possui a base de dados .
+## 🛠️ Tecnologias Utilizadas
 
-Para usar:
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-Abra o Xammp ativa o Mysql e o Apache e dê dois cliques no arquivo dentro da pasta bd
+- **Linguagem:** [PHP](https://www.php.net/) (Lógica de servidor e comunicação com DB)
+- **Banco de Dados:** [MySQL](https://www.mysql.com/) (Armazenamento de dados)
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Bibliotecas:** [jQuery](https://jquery.com/) (Interações dinâmicas)
+- **Ícones:** [Bootstrap Icons](https://icons.getbootstrap.com/)
+- **Servidor Local Recomendado:** [XAMPP](https://www.apachefriends.org/) ou [WampServer](https://www.wampserver.com/)
 
-⚙️ Executando os testes
+## ⚙️ Instalação e Configuração
 
-Quando dar o clique a base de dados ja estará instalada, depois apenas de acessar ao arquivo atraves do apache 🔩 Analise os testes de ponta a ponta
+Siga os passos abaixo para rodar o projeto localmente:
 
-Apache
+### 1. Pré-requisitos
+- Ter o **XAMPP** (ou similar) instalado.
+- Servidor **Apache** e **MySQL** ativos.
 
-⌨️ Acessando o apache
+### 2. Clonar o Repositório
+```bash
+git clone https://github.com/Tsiangana/AOFlix.git
+```
 
-Com o Apache instalado, abra o seu navegador e digite "Localhost"
+### 3. Configurar no Servidor
+Mova a pasta do projeto para o diretório `htdocs` do seu servidor local:
+- No Windows: `C:\xampp\htdocs\AOFlix`
+- No Linux: `/opt/lampp/htdocs/AOFlix`
 
-Serás levado para uma area com nome de várias pastas, selecione o nome da pasta do arquivo
+### 4. Banco de Dados
+1. Acesse o **phpMyAdmin** (`http://localhost/phpmyadmin`).
+2. Crie um novo banco de dados chamado `aoflix`.
+3. Importe o arquivo SQL fornecido com o projeto (geralmente localizado na pasta `bd` ou `database`).
+4. Verifique as credenciais no arquivo `cofing.php`:
+   ```php
+   $conn = mysqli_connect('localhost', 'root', '', 'aoflix');
+   ```
 
-📦 Dúvidas Em caso de dúvida podes sempre criar uma issue e me dizer em que voce tem problemas.
+### 5. Acessar a Aplicação
+Abra o seu navegador e digite:
+`http://localhost/AOFlix/inicio.php`
 
-🛠️ Construído com
+## 📸 Screenshots
 
-Mysql - Base de dados
-Xampp - Apk que transforma a sua máquina em um servidor locar
-Html - estrutura
-CSS - estilizaçao
-JS - Dinámica
-Php - Linguagem de comunicaçao entre a base de dados e o front-end
+<div align="center">
+  <img src="img/preview1.png" alt="Home Screen" width="45%">
+  <img src="img/preview2.png" alt="Admin Panel" width="45%">
+</div>
 
-🖇️ Colaborando
+---
 
-Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação. 📌 Versão
+## 🤝 Contribuição
 
-Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório. ✒️ Autores
+Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
-Você também pode ver a lista de todos os colaboradores que participaram deste projeto. 📄 Licença
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
+3. Insira suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Faça o Push da Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-Este projeto está sob a licença (MIT Licence) - veja o arquivo LICENSE.md para detalhes. 🎁 Expressões de gratidão
+## ✒️ Autores
 
-Conte a outras pessoas sobre este projeto 📢;
-Convide alguém da equipe para uma cerveja 🍺;
-Um agradecimento publicamente 🫂;
-etc.
+* **Tsiangana** - *Desenvolvimento Inicial* - [Seu GitHub](https://github.com/Tsiangana)
 
-⌨️ com ❤️ por Tsiangana 😊
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+<p align="center">Desenvolvido com ❤️ por <a href="https://github.com/Tsiangana">Tsiangana</a></p>
